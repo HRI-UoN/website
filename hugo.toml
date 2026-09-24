@@ -1,3 +1,50 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "http://localhost:1313/"
+locale = "en-GB"
+title = "Human-Robot Interaction @ University of Nottingham"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "light"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = true
+
+[[menu.main]]
+  identifier = "research"
+  name = "Research"
+  url = "/research/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "people"
+  name = "People"
+  url = "/people/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "publications"
+  name = "Publications"
+  url = "/publications/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "news"
+  name = "News"
+  url = "/news/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "opportunities"
+  name = "Opportunities"
+  url = "/opportunities/"
+  weight = 50
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 60
+
+[markup.goldmark.renderer]
+  unsafe = true
